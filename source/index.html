@@ -20,7 +20,10 @@
       <button type="submit" class="search__btn">Search</button>
     </form>
     <form action="#" class="get-form">
-      <h2 class="get-form__text">Аналитические весы OHAUS Adventurer АХ324 (B715976163)</h2>
+      <div class="get-form__info">
+        <h2 class="get-form__text">Аналитические весы OHAUS Adventurer АХ324 (B715976163)</h2>
+        <button class="get-form__info-btn hidden"><span class="visually-hidden">Информация</span></button>
+      </div>
       <section class="info">
         <h2 class="visually-hidden">Информация об оборудовании</h2>
         <div class="info__stats">
@@ -93,7 +96,10 @@
           <label for="Using" class="options__control">Using</label>
         </div>
       </section>
-      <button type="submit" class="get-form__btn">Generate report</button>
+      <div class="get-form__btn">
+        <button type="submit" class="get-form__report-btn">Generate report</button>
+        <button class="get-form__save-btn hidden">Save pdf</button>
+      </div>
     </form>
     <table class="table">
       <caption class="table__caption">Calibration report</caption>

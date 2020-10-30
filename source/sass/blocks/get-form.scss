@@ -1,10 +1,19 @@
 .get-form {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 127px 1fr 40px;
 }
 
 .get-form__btn {
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+.get-form__report-btn {
   width: 180px;
   min-height: 40px;
   border-radius: 3px;
@@ -14,8 +23,21 @@
   font-size: 14px;
   line-height: 24px;
   color: $basic-white;
-  grid-column: 1;
-  grid-row: 3;
+}
+
+.get-form__save-btn {
+  color: $medium-grey;
+  width: 90px;
+  min-height: 40px;
+  background-color: $basic-white;
+  border: 1px solid $input-grey;
+  border-radius: 3px;
+}
+
+.get-form__info {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .get-form__text {
@@ -31,6 +53,16 @@
   background-image: url(../img/scale.svg);
   background-repeat: no-repeat;
   background-position-y: 5px;
-  grid-column: 1/2;
-  grid-row: 1/2;
+
+}
+
+.get-form__info-btn {
+  width: 22px;
+  height: 22px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/info.svg");
+  position: absolute;
+  top: 17px;
+  right: 30px;
 }
