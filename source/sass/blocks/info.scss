@@ -1,0 +1,31 @@
+.info {
+  grid-row: 1/-1;
+  grid-column: 2/3;
+  margin-top: 17px;
+}
+
+.info__stats {
+  background-color: $extra-light-grey;
+  border-radius: 5px;
+  width: 550px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 20px;
+  padding-bottom: 29px;
+}
+
+.info__stats-item {
+  margin: 0;
+  margin-bottom: 5px;
+  color: $light-grey;
+}
+
+.info__stats-item-value {
+  color: #444651;
+
+  & a {
+    text-decoration: none;
+    color: $link;
+  }
+}

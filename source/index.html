@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <title>BIOCAD</title>
+</head>
+<body class="page">
+  <main class="page__main">
+    <form class="search">
+      <h2 class="search__text">Enter inventory number, guid or bims id</h2>
+      <div class="search__list-wrap">
+        <select class="search__list">
+          <option>A-001234</option>
+          <option>2 пункт</option>
+          <option>3 пункт</option>
+        </select>
+      </div>
+      <button type="submit" class="search__btn">Search</button>
+    </form>
+    <form action="#" class="get-form">
+      <h2 class="get-form__text">Аналитические весы OHAUS Adventurer АХ324 (B715976163)</h2>
+      <section class="info">
+        <h2 class="visually-hidden">Информация об оборудовании</h2>
+        <div class="info__stats">
+          <p class="info__stats-item">
+            Тип оборудования:
+            <span class="info__stats-item-value">Весы</span>
+          </p>
+          <p class="info__stats-item">
+            Статус:
+            <span class="info__stats-item-value">Готов к работе</span>
+          </p>
+          <p class="info__stats-item">
+            Изготовитель:
+            <span class="info__stats-item-value">Ohaus</span>
+          </p>
+          <p class="info__stats-item">
+            Модель:
+            <span class="info__stats-item-value">AX-123</span>
+          </p>
+          <p class="info__stats-item">
+            Ответственное подразделение (ремонт):
+            <span class="info__stats-item-value">Группа обслуживания лабораторного оборудования</span>
+          </p>
+          <p class="info__stats-item">
+            Эксплуатирующее подразделение:
+            <span class="info__stats-item-value">Химико-аналитическая лаборатория 2.0</span>
+          </p>
+          <p class="info__stats-item">
+            МОЛ:
+            <span class="info__stats-item-value">Иванов Иван Иванович</span>
+          </p>
+          <p class="info__stats-item">
+            Территория:
+            <span class="info__stats-item-value">г. Санкт-Петербург (Нойдорф)</span>
+          </p>
+          <p class="info__stats-item">
+            Серийный номер:
+            <span class="info__stats-item-value">B715976163</span>
+          </p>
+          <p class="info__stats-item">
+            GUID:
+            <span class="info__stats-item-value"><a href="#">508b2a71-662e-4983-ae0c-3cb0c1cd21c5</a></span>
+          </p>
+          <p class="info__stats-item">
+            Bims ID:
+            <span class="info__stats-item-value"><a href="#">49db8db1-585f-4b9e-bbf0-8a59698edc8b</a></span>
+          </p>
+          <p class="info__stats-item">
+            Tam:
+            <span class="info__stats-item-value"><a href="#">А-001234</a></span>
+          </p>
+        </div>
+      </section>
+      <section class="options">
+        <h2 class="visually-hidden">Настройки</h2>
+        <div class="options__term-wrap">
+          <select class="options__term">
+            <option>1 month</option>
+            <option>3 month</option>
+            <option>6 month</option>
+            <option>12 month</option>
+          </select>
+        </div>
+        <div class="options__control-wrap">
+          <input type="radio" name="option" id="Calibration" class="visually-hidden">
+          <label for="Calibration" class="options__control">Calibration</label>
+          <input type="radio" name="option" id="Measuring" class="visually-hidden">
+          <label for="Measuring" class="options__control">Measuring</label>
+          <input type="radio" name="option" id="Using" class="visually-hidden">
+          <label for="Using" class="options__control">Using</label>
+        </div>
+      </section>
+      <button type="submit" class="get-form__btn">Generate report</button>
+    </form>
+    <table class="table">
+      <caption class="table__caption">Calibration report</caption>
+      <tr class="table__row table__row-1">
+        <td>Data</td>
+        <td>Used buffer solutions</td>
+        <td class="table__column-head-3">Slope, % Norm 95-105</td>
+        <td class="table__column-head-4">Offset, mV Norm ±(0-20)</td>
+        <td>User</td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__colum-1">04.10.19 10:23</td>
+        <td class="table__colum-2">
+          <p>В1: № 2000460789536: pH 1.09</p>
+          <p>В3: № 2000460789536: pH 4.01</p>
+          <p>В4: № 2000460789536: pH 7.00</p>
+          <p>В2: № 2000460789536: pH 2.00</p>
+          <p>В5: № 2000460789536: pH 9.21</p>
+        </td>
+        <td class="table__colum-3 table__colum-3--valid">98.7</td>
+        <td class="table__colum-4 table__colum-4--valid">-0.3</td>
+        <td class="table__colum-5">Иванов Геннадий Петрович</td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__colum-1">04.10.19 10:23</td>
+        <td class="table__colum-2">
+          <p>В1: № 2000460789536: pH 1.09</p>
+          <p>В3: № 2000460789536: pH 4.01</p>
+          <p>В4: № 2000460789536: pH 7.00</p>
+          <p>В2: № 2000460789536: pH 2.00</p>
+          <p>В5: № 2000460789536: pH 9.21</p>
+        </td>
+        <td class="table__colum-3 table__colum-3--valid">98.7</td>
+        <td class="table__colum-4 table__colum-4--valid">-0.3</td>
+        <td class="table__colum-5">Петров Иван Геннадьевич</td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__colum-1">04.10.19 10:23</td>
+        <td class="table__colum-2">
+          <p>В1: № 2000460789536: pH 1.09</p>
+          <p>В3: № 2000460789536: pH 4.01</p>
+          <p>В4: № 2000460789536: pH 7.00</p>
+          <p>В2: № 2000460789536: pH 2.00</p>
+          <p>В5: № 2000460789536: pH 9.21</p>
+        </td>
+        <td class="table__colum-3 table__colum-3--valid">98.7</td>
+        <td class="table__colum-4 table__colum-4--valid">-0.3</td>
+        <td class="table__colum-5">Петров Геннадий Иванович</td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__colum-1">04.10.19 10:23</td>
+        <td class="table__colum-2">
+          <p>В1: № 2000460789536: pH 1.09</p>
+          <p>В3: № 2000460789536: pH 4.01</p>
+          <p>В4: № 2000460789536: pH 7.00</p>
+          <p>В2: № 2000460789536: pH 2.00</p>
+          <p>В5: № 2000460789536: pH 9.21</p>
+        </td>
+        <td class="table__colum-3">90.1</td>
+        <td class="table__colum-4 table__colum-4--valid">-0.5</td>
+        <td class="table__colum-5">Геннадьев Иван Петрович</td>
+      </tr>
+    </table>
+  </main>
+</body>
+</html>

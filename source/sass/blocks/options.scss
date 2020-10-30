@@ -1,0 +1,57 @@
+.options__term-wrap {
+  margin-bottom: 14px;
+}
+
+.options__term {
+  width: 220px;
+  min-height: 30px;
+  border: 1px solid $border-grey;
+  padding: 0 12px;
+  appearance: none;
+  background-image: url("../img/vector.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.options__control-wrap {
+  width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+
+  & input:checked + .options__control{
+    &::after {
+      content: "";
+    }
+  }
+}
+
+.options__control {
+  position: relative;
+  width: 100%;
+  padding-left: 31px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $input-grey;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: none;
+    position: absolute;
+    top: 56%;
+    left: 5px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $link;
+  }
+}
